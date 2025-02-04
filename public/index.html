@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/style.css" />
+        <script src="/script.js" defer></script>
+
+        <title>Mini room planner</title>
+    </head>
+    <body>
+        <header class="row">
+            <h1>Room Planner</h1>
+        </header>
+        <main class="col">
+            <div id="area-display">
+                Area used: <span id="objective"></span>%
+            </div>
+
+            <div class="container room"></div>
+
+            <div id="error-display"></div>
+
+            <form id="furniture-form">
+                <input type="text" name="name" placeholder="Furniture name" />
+                <input type="number" name="width" placeholder="Width" />
+                <input type="number" name="length" placeholder="Length" />
+                <button type="submit">Add Furniture</button>
+            </form>
+        </main>
+    </body>
+</html>
